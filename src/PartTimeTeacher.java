@@ -8,6 +8,14 @@ public class PartTimeTeacher extends Teacher{
         this.hoursActivePerWeek = hoursActivePerWeek;
     }
 
+    public int getHoursActivePerWeek() {
+        return hoursActivePerWeek;
+    }
+
+    public void setHoursActivePerWeek(int hoursActivePerWeek) {
+        this.hoursActivePerWeek = hoursActivePerWeek;
+    }
+
     public double calculateSalary() {
         return baseSalary * hoursActivePerWeek;
     }

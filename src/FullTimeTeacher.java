@@ -8,7 +8,14 @@ public class FullTimeTeacher extends Teacher {
         this.experienceYears = experienceYears;
     }
 
-    @Override
+    public int getExperienceYears() {
+        return experienceYears;
+    }
+
+    public void setExperienceYears(int experienceYears) {
+        this.experienceYears = experienceYears;
+    }
+
     public double calculateSalary() {
         return baseSalary * (experienceYears * 1.1f);
     }
