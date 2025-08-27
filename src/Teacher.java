@@ -1,11 +1,16 @@
-public abstract class Teacher extends Person {
+public abstract class Teacher {
 
+    protected String name;
     protected double baseSalary;
 
     public Teacher(){}
     public Teacher(String name,double baseSalary){
-        super(name);
+        this.name=name;
         this.baseSalary = baseSalary;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public double getBaseSalary() {

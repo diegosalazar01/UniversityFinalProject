@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Classes {
@@ -8,42 +9,31 @@ public class Classes {
     private Teacher teacher;
 
     public Classes() {}
-    public Classes(String name, int classroom, List<Student> students,Teacher teacher) {
+    public Classes(String name, int classroom,Teacher teacher) {
         this.name = name;
         this.classroom = classroom;
-        this.students = students;
         this.teacher = teacher;
+        this.students = new ArrayList<>();
+    }
+
+    public void addStudent(Student student) {
+        this.students.add(student);
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getClassroom() {
         return classroom;
-    }
-
-    public void setClassroom(int classroom) {
-        this.classroom = classroom;
     }
 
     public List<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Student> students) {
-        this.students = students;
-    }
-
     public Teacher getTeacher() {
         return teacher;
     }
 
-    public void setTeacher(Teacher teacher) {
-        this.teacher = teacher;
-    }
 }
