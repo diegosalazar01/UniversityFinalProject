@@ -8,7 +8,7 @@ public class Classes {
     private List<Student> students;
     private Teacher teacher;
 
-    public Classes() {}
+    public Classes() {this.students = new ArrayList<>();}
     public Classes(String name, int classroom,Teacher teacher) {
         this.name = name;
         this.classroom = classroom;
@@ -36,4 +36,19 @@ public class Classes {
         return teacher;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setClassroom(int classroom) {
+        this.classroom = classroom;
+    }
+
+    public void setStudents(List<Student> students) {
+        this.students = students;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
 }
